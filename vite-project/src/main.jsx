@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { Home } from './home.jsx'
+import { Home } from './home'
 import { Consumo } from './consumo'
 import './index.css'
 
@@ -12,7 +12,7 @@ const router = createBrowserRouter([
     element: <Home />,
   },
   {
-    path: "/Consumo",
+    path: "/consumo",
     element: <Consumo />,
   },
 ]);

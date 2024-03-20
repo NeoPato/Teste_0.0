@@ -1,4 +1,4 @@
-import Graficos from "./components/Graficos"
+import Graficos from "./components/graficos"
 import Menu from "./components/menu"
 
 export const Home = () => {

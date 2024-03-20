@@ -7,12 +7,17 @@ export const Consumo = () => {
             <Menu/>
             <br />
             Consumo JSON
-            <Card 
-             name="Lucas"
-             desc="coisa"
-             value="10,00" 
-             img="https://imgv3.fotor.com/images/side/astronaut-in-space-looking-up-at-the-stars-generated-by-Fotor-AI.jpg"
-            />
+            {data.map((item) => {
+                return(
+                    <Card 
+                    name={item.name}
+                    desc={item.desc}
+                    value={item.value} 
+                    image={item.image}
+                    />
+                )
+            })}
+            
         </div>
     )
 }
